@@ -5,6 +5,25 @@
 body {
     font-size: 10px;
     font-family: Tahoma, Arial;
+
+    /* This is an A11y Change */
+    background-color: #ffffff; /* Ensures a readable contrast */
+}
+
+/* This is an A11y Change: Skip Link Style */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #4d5791;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
 }
 
 div.menu {
@@ -57,6 +76,9 @@ div.hero h1 {
     color: #fff;
     font-size: 4.2em;
     margin-bottom: 20px;
+
+    /* This is an A11y Change */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Improves readability */
 }
 
 div.hero h2 {
